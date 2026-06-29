@@ -72,10 +72,11 @@ Explore Collection
 <section id="products">
   <div class="categories">
     <button>All</button>
-    <button>Smart Watch</button>
-    <button>Earbuds</button>
-    <button>Soundbar</button>
-    <button>Accessories</button>
+    <button onclick="filterProducts('watch')">Smart Watch</button>
+<button onclick="filterProducts('earbuds')">Earbuds</button>
+<button onclick="filterProducts('soundbar')">Soundbar</button>
+<button onclick="filterProducts('accessories')">Accessories</button>
+<button onclick="filterProducts('all')">All</button>
   </div>
 
 <h2>
@@ -85,28 +86,28 @@ Featured Products
 </h2>
 
 <div class="product-grid">
-  <div class="product-card">
+  <div class="product-card" data-category="watch"> 
 <img src="45abeb6c-3d2c-4a5a-8f73-3a9f0c1a80ef.png" alt="Smart Watch">
 <h3>Smart Watch</h3>
 <p>Elegant AMOLED Display with Health Tracking.</p>
 <a href="#" class="buy-btn">Buy Now</a>
 </div>
 
-<div class="product-card">
+<div class="product-card" data-category="earbuds">
 <img src="IMG-20260627-WA0021.jpg" alt="Wireless Earbuds">
 <h3>Wireless Earbuds</h3>
 <p>Crystal Clear Sound with ENC Noise Cancellation.</p>
 <a href="#" class="buy-btn">Buy Now</a>
 </div>
 
-<div class="product-card">
+<div class="product-card" data-category="soundbar"> 
 <img src="IMG-20260627-WA0020.jpg" alt="Soundbar">
 <h3>Premium Soundbar</h3>
 <p>Powerful Bass & Cinematic Audio Experience.</p>
 <a href="#" class="buy-btn">Buy Now</a>
 </div>
 
-<div class="product-card">
+<div class="product-card" data-category="accessories"> 
 <img src="f4b5af5e-f9b0-4e7a-a59f-e8bc320c8909.png" alt="Accessories Collection">
 <h3>Accessories Collection</h3>
 <p>Premium Smart Accessories for Everyday Use.</p> 
