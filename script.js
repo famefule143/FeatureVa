@@ -27,3 +27,18 @@ card.style.transform="translateY(0px)";
 });
 
 }); 
+function filterProducts(category){
+    let products = document.querySelectorAll('.product-card');
+
+    products.forEach(product => {
+        if(category === 'all'){
+            product.style.display = "block";
+        }
+        else if(product.getAttribute('data-category') === category){
+            product.style.display = "block";
+        }
+        else{
+            product.style.display = "none";
+        }
+    });
+}
