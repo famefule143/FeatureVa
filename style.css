@@ -12,6 +12,8 @@ font-family:'Poppins',sans-serif;
 background:#070707;
 color:#fff;
 overflow-x:hidden;
+position:relative;
+z-index:0;
 }
 
 a{
@@ -449,7 +451,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-z-index:0;
+z-index:-1;
 }
 header,
 section,
