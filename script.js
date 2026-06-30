@@ -65,38 +65,30 @@ card.style.display="none";
 });
 
 }
-tsParticles.load("tsparticles",{
-
-background:{
-color:"#050505"
-},
-
-particles:{
-number:{
-value:120
-},
-
-color:{
-value:["#FFD700","#ffffff","#00ffff"]
-},
-
-move:{
-enable:true,
-speed:1
-},
-
-size:{
-value:{min:1,max:4}
-},
-
-opacity:{
-value:0.8
-},
-
-links:{
-enable:false
-}
-
-}
-
-});
+tsParticles
+  .load({
+    id: "tsparticles",
+    options: {
+      background: {
+        color: "transparent"
+      },
+      particles: {
+        number: {
+          value: 80
+        },
+        color: {
+          value: ["#FFD700", "#FFFFFF", "#00FFFF"]
+        },
+        move: {
+          enable: true,
+          speed: 1
+        },
+        size: {
+          value: { min: 1, max: 3 }
+        },
+        opacity: {
+          value: 0.7
+        }
+      }
+    }
+  });
